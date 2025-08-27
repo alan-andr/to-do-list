@@ -19,6 +19,7 @@ btnAdd.addEventListener('click', () => {
 
     let taskList = document.getElementById('task-list');
     let liTaskList = document.createElement('li');
+    liTaskList.classList.add('li-container');
 
     let hour = time.getHours();
     let minutes = time.getMinutes().toString().padStart(2, "0");
@@ -56,9 +57,21 @@ btnAdd.addEventListener('click', () => {
     btnRemove.textContent = 'Excluir';
 
     btnDone.addEventListener('click', () => {
+        taskTime.textContent = '';
         spanTaskName.style.textDecoration = 'line-through';
+
+        time = new Date();
+        hour = time.getHours();
+        minutes = time.getMinutes().toString().padStart(2, "0");
+        day = time.getDate();
+        month = (time.getMonth() + 1).toString().padStart(2, "0");
+        year = time.getFullYear();
+
         taskTime.textContent = `Tarefa concluída às ${hour}h${minutes} em ${day}/${month}/${year}`;
         liTaskList.appendChild(taskTime);
+
+        btnDone.remove();
+        btnEdit.remove();
     });
 
     btnEdit.addEventListener('click', () => {
