@@ -57,6 +57,8 @@ btnAdd.addEventListener('click', () => {
 
     btnDone.addEventListener('click', () => {
         spanTaskName.style.textDecoration = 'line-through';
+        taskTime.textContent = `Tarefa concluída às ${hour}h${minutes} em ${day}/${month}/${year}`;
+        liTaskList.appendChild(taskTime);
     });
 
     btnEdit.addEventListener('click', () => {
@@ -81,7 +83,10 @@ btnAdd.addEventListener('click', () => {
             renameTask.replaceWith(spanTaskName);
             btnSave.replaceWith(btnEdit);
 
-            taskTime.textContent = `Tarefa adicionada às ${hour}h${minutes} em ${day}/${month}/${year}`;
+            hour = time.getHours();
+            minutes = time.getMinutes();
+
+            taskTime.textContent = `Tarefa alterada às ${hour}h${minutes} em ${day}/${month}/${year}`;
 
             liTaskList.appendChild(taskTime);
         }
