@@ -13,7 +13,7 @@
     --color-02: #087F8C;
     --color-03: #5aaa95;
     --color-04: #86a873;
-    --color-04-light: #91ca74df;
+    --color-04-light: #91ca74bb;
     --color-05: #bb9f06;
 
     --color-06: #C7EFCF;
@@ -102,7 +102,7 @@ section.add {
     border-radius: 1rem;
     box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
 
-    background-color: var(--color-04-light);
+    background-image: linear-gradient(45deg, #5aaa9596, #87a8739a);
 }
 
 section.add::before {
@@ -139,7 +139,6 @@ section.add input[type=text]:focus {
     outline: none;
 }
 
-
 section.add button#addTask {
     background-color: var(--color-01);
     color: var(--color-08);
@@ -148,6 +147,12 @@ section.add button#addTask {
     max-width: 200px;
 
     margin: 0 0 1rem 0;
+    outline-offset: 2px;
+}
+
+button#addTask:hover {
+    outline: 2px solid var(--color-02);
+    transition: .2s;
 }
 
 section > ul#task-list {
