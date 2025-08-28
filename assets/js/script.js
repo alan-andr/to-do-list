@@ -20,6 +20,8 @@ btnAdd.addEventListener('click', () => {
 
     if (list.length > -1) {
         sectionAdd.style.marginTop = '2rem';
+    } else {
+        sectionAdd.style.marginTop = '0rem';
     }
 
     let hour = time.getHours();
@@ -48,20 +50,38 @@ btnAdd.addEventListener('click', () => {
 
     let containerButtons = document.createElement('div');
     containerButtons.classList.add('buttons');
+
     const btnDone = document.createElement('button');
     btnDone.type = 'button';
-    btnDone.textContent = 'Concluir';
     btnDone.id = 'done';
+
+    let iconDone = document.createElement('i');
+    iconDone.classList.add('fa-regular', 'fa-circle-check', 'icon');
+
+    btnDone.appendChild(iconDone);
+    btnDone.append(" Concluir");
 
     const btnEdit = document.createElement('button');
     btnEdit.type = 'button';
-    btnEdit.textContent = 'Editar';
     btnEdit.id = 'edit';
+
+    let iconEdit = document.createElement('i');
+    iconEdit.classList.add('fa-regular', 'fa-pen-to-square', 'icon');
+
+
+    btnEdit.appendChild(iconEdit);
+    btnEdit.append(" Editar");
 
     const btnRemove = document.createElement('button');
     btnRemove.type = 'button';
-    btnRemove.textContent = 'Excluir';
     btnRemove.id = 'remove';
+
+    let iconRemove = document.createElement('i');
+    iconRemove.classList.add("fa-regular", "fa-trash-can", "icon");
+
+
+    btnRemove.appendChild(iconRemove);
+    btnRemove.append(" Excluir")
 
     btnDone.addEventListener('click', () => {
         taskTime.textContent = '';
