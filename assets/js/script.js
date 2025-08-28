@@ -26,6 +26,7 @@ btnAdd.addEventListener('click', () => {
     taskTime.textContent = `Tarefa adicionada às ${hour}h${minutes} em ${day}/${month}/${year}`;
 
     document.getElementById('task').value = '';
+    message.textContent = '';
 
     if (taskName.trim() === '') {
         message.textContent = 'Por favor, preencha o campo "Tarefa".';
