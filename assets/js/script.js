@@ -8,7 +8,6 @@ let message = document.createElement('p');
 let time = new Date();
 let year = time.getFullYear();
 
-
 btnAdd.addEventListener('click', () => {
     let taskName = document.getElementById('task').value;
     let spanTaskName = document.createElement('span');
@@ -17,6 +16,12 @@ btnAdd.addEventListener('click', () => {
     let taskList = document.getElementById('task-list');
     let liTaskList = document.createElement('li');
     liTaskList.classList.add('li-container');
+    let sectionAdd = document.querySelector('section.add');
+    sectionAdd.style.marginTop = '2rem';
+
+    if (list.length === 0) {
+        sectionAdd.style.marginTop = '0';
+    }
 
     let hour = time.getHours();
     let minutes = time.getMinutes().toString().padStart(2, "0");
@@ -24,6 +29,8 @@ btnAdd.addEventListener('click', () => {
     let month = (time.getMonth() + 1).toString().padStart(2, "0");
     let taskTime = document.createElement('p');
     taskTime.textContent = `Tarefa adicionada às ${hour}h${minutes} em ${day}/${month}/${year}`;
+
+    
 
     document.getElementById('task').value = '';
     message.textContent = '';

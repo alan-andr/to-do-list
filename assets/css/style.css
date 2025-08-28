@@ -53,6 +53,7 @@ header {
     border-radius: .600rem .600rem 0 0;
     box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
 
+    padding: 2rem;
 }
 
 header h1 {
@@ -62,9 +63,6 @@ header h1 {
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.295);
 
     color: var(--color-06);
-
-    padding: 1rem;
-    
 }
 
 main {
@@ -73,9 +71,9 @@ main {
     width: 100%;
     height: 100%;
     max-width: 370px;
-    min-height: 370px;
+    min-height: 500px;
 
-    margin: auto auto 2rem auto;
+    margin: auto auto 2.5rem auto;
     border-radius: 0 0 1rem 1rem;
     padding: 1rem;
     box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
@@ -89,16 +87,36 @@ main {
 section.add {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
-    gap: .500rem;
+    gap: 1rem;
 
+    height: 100%;
+    min-height: 220px;
+    width: 100%;
+    max-width: 280px;
+    
+    border-radius: 1rem;
+    box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
+
+    background-color: #87a8731d;
+}
+
+section.add::before {
+    content: '';
+
+    background-color: var(--color-01);
+
+    width: 88%;
+    height: .400rem;
+
+    border-radius: 1rem;
 }
 
 section.add input[type=text] {
     border: none;
-    border-bottom: 2px solid var(--color-01);
+    border-bottom: 1px solid var(--color-01);
 
     width: 100%;
     max-width: 200px;
@@ -106,11 +124,15 @@ section.add input[type=text] {
     text-align: center;
     font-size: 1rem;
     font-family: var(--font-text);
+
+    color: black;
+    background-color: transparent;
 }
 
 section.add input[type=text]:focus {
     outline: none;
 }
+
 
 section.add button#addTask {
     background-color: var(--color-01);
@@ -118,6 +140,8 @@ section.add button#addTask {
 
     width: 100%;
     max-width: 200px;
+
+    margin: 0 0 1rem 0;
 }
 
 section > ul#task-list {
@@ -131,10 +155,15 @@ section > ul#task-list li.li-container {
     align-items: center;
     gap: 1rem;
 
-    margin: 2rem 0 1.5rem 0;
+    margin: 2.5rem 0 2rem 0;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
+
+    height: 100%;
+    width: 100%;
+    min-height: 220px;
+    max-width: 300px;
 
     background-color: #87a8731d;
 
