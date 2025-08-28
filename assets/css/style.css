@@ -150,9 +150,9 @@ section.add button#addTask {
     outline-offset: 2px;
 }
 
-button#addTask:hover {
-    outline: 2px solid var(--color-02);
-    transition: .2s;
+section.add button#addTask:hover {
+    transition-duration: .5s;
+    background-color: #095256c4;
 }
 
 section > ul#task-list {

@@ -4,6 +4,7 @@ let list = [];
 
 let containerMessage = document.getElementById('msg');
 let message = document.createElement('p');
+let sectionAdd = document.querySelector('section.add');
 
 let time = new Date();
 let year = time.getFullYear();
@@ -16,9 +17,8 @@ btnAdd.addEventListener('click', () => {
     let taskList = document.getElementById('task-list');
     let liTaskList = document.createElement('li');
     liTaskList.classList.add('li-container');
-    let sectionAdd = document.querySelector('section.add');
 
-    if (list.length > 0) {
+    if (list.length > -1) {
         sectionAdd.style.marginTop = '2rem';
     }
 
