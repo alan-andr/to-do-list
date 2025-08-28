@@ -7,10 +7,7 @@ let message = document.createElement('p');
 
 let time = new Date();
 let year = time.getFullYear();
-const footer = document.querySelector('footer.footer-content');
-const footerContent = document.createElement('p');
-footerContent.textContent = `Copyright © ${year} To-do List`;
-footer.appendChild(footerContent);
+
 
 btnAdd.addEventListener('click', () => {
     let taskName = document.getElementById('task').value;
@@ -47,14 +44,17 @@ btnAdd.addEventListener('click', () => {
     const btnDone = document.createElement('button');
     btnDone.type = 'button';
     btnDone.textContent = 'Concluir';
+    btnDone.id = 'done';
 
     const btnEdit = document.createElement('button');
     btnEdit.type = 'button';
     btnEdit.textContent = 'Editar';
+    btnEdit.id = 'edit';
 
     const btnRemove = document.createElement('button');
     btnRemove.type = 'button';
     btnRemove.textContent = 'Excluir';
+    btnRemove.id = 'remove';
 
     btnDone.addEventListener('click', () => {
         taskTime.textContent = '';

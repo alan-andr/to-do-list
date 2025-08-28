@@ -28,8 +28,20 @@ body, html {
 
 button {
     padding: .500rem;
+    border-radius: .850rem;
 
+    font-size: .725rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .025rem;
+
+    box-shadow: 1px 2px 6px -1px rgba(0, 0, 0, 0.279);
+
+    border: 1px solid black;
+    
     font-family: var(--font-text);
+
+    cursor: pointer;
 }
 
 header {
@@ -38,13 +50,14 @@ header {
     width: 100%;
     max-width: 370px;
     margin: 1rem auto 0 auto;
-    border-radius: .900rem .900rem 0 0;
+    border-radius: .600rem .600rem 0 0;
+    box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
 
 }
 
 header h1 {
     font-family: var(--font-title);
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.295);
 
@@ -60,11 +73,17 @@ main {
     width: 100%;
     height: 100%;
     max-width: 370px;
-    min-height: 300px;
+    min-height: 200px;
 
     margin: auto;
     border-radius: 0 0 1rem 1rem;
     padding: 1rem;
+    box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section.add {
@@ -79,7 +98,7 @@ section.add {
 
 section.add input[type=text] {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid var(--color-01);
 
     width: 100%;
     max-width: 200px;
@@ -87,7 +106,10 @@ section.add input[type=text] {
     text-align: center;
     font-size: 1rem;
     font-family: var(--font-text);
+}
 
+section.add input[type=text]:focus {
+    outline: none;
 }
 
 section.add button#addTask {
@@ -103,18 +125,18 @@ section > ul#task-list {
 }
 
 section > ul#task-list li.li-container {
-
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
     gap: .500rem;
 
-    margin: 1rem;
+    margin: 1.5rem 0 0 0;
     padding: 1rem;
-    border-radius: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
 
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: #87a8731d;
 
     font-family: var(--font-text);
     text-wrap: balance;
@@ -130,13 +152,54 @@ section > ul#task-list li.li-container::before {
 }
 
 section > ul#task-list li.li-container > span {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-wrap: balance;
+    text-align: center;
+}
+
+section > ul#task-list > li.li-container > div.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .500rem;
 }
 
 
+div.buttons > button#done {
+    background-color: #97DE6E;
+    color: black;
+}
+
+div.buttons > button#done:hover {
+    background-color: #85c460;
+    transition-duration: .5s;
+}
+
+div.buttons > button#edit {
+    background-color: #7EC4EE;
+    color: black;
+}
+
+div.buttons > button#edit:hover {
+    background-color: #609FC4;
+    transition-duration: .5s;
+}
+
+div.buttons > button#remove {
+    background-color: #F67A7E;
+}
+
+div.buttons > button#remove:hover {
+    background-color: #C46063;
+    transition-duration: .5s;
+}
+
 section > ul#task-list li.li-container > p {
-    font-size: .825rem;
+    font-size: .725rem;
     text-align: center;
+    font-weight: 400;
 }
 
 
