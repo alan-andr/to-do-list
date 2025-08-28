@@ -13,10 +13,12 @@
     --color-02: #087F8C;
     --color-03: #5aaa95;
     --color-04: #86a873;
+    --color-04-light: #91ca74df;
     --color-05: #bb9f06;
 
     --color-06: #C7EFCF;
     --color-07: #E5E5E5;
+    --color-08: #F1F5EF;
 
     --font-title: 'Amatic SC', Arial, Sans-serif;
     --font-text: 'Poppins', Arial, Sans-serif;
@@ -62,7 +64,7 @@ header h1 {
     text-align: center;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.295);
 
-    color: var(--color-06);
+    color: var(--color-08);
 }
 
 main {
@@ -100,7 +102,7 @@ section.add {
     border-radius: 1rem;
     box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
 
-    background-color: #87a8731d;
+    background-color: var(--color-04-light);
 }
 
 section.add::before {
@@ -125,8 +127,12 @@ section.add input[type=text] {
     font-size: 1rem;
     font-family: var(--font-text);
 
-    color: black;
+    color: #001117;
     background-color: transparent;
+}
+
+section.add input[type=text]::placeholder {
+    color: #001117;
 }
 
 section.add input[type=text]:focus {
@@ -136,7 +142,7 @@ section.add input[type=text]:focus {
 
 section.add button#addTask {
     background-color: var(--color-01);
-    color: var(--color-06);
+    color: var(--color-08);
 
     width: 100%;
     max-width: 200px;
@@ -166,6 +172,7 @@ section > ul#task-list li.li-container {
     max-width: 300px;
 
     background-color: #87a8731d;
+    
 
     font-family: var(--font-text);
     text-wrap: balance;

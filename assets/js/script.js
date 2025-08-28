@@ -17,10 +17,9 @@ btnAdd.addEventListener('click', () => {
     let liTaskList = document.createElement('li');
     liTaskList.classList.add('li-container');
     let sectionAdd = document.querySelector('section.add');
-    sectionAdd.style.marginTop = '2rem';
 
-    if (list.length === 0) {
-        sectionAdd.style.marginTop = '0';
+    if (list.length > 0) {
+        sectionAdd.style.marginTop = '2rem';
     }
 
     let hour = time.getHours();
