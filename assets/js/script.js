@@ -86,6 +86,7 @@ btnAdd.addEventListener('click', () => {
     btnDone.addEventListener('click', () => {
         taskTime.textContent = '';
         spanTaskName.style.textDecoration = 'line-through';
+        spanTaskName.style.opacity = '0.5'
 
         time = new Date();
         hour = time.getHours();
@@ -112,6 +113,9 @@ btnAdd.addEventListener('click', () => {
 
         spanTaskName.replaceWith(renameTask);
 
+        btnDone.remove();
+        btnRemove.remove();
+
         taskTime.textContent = '';
 
         btnSave.onclick = () => {
@@ -129,6 +133,7 @@ btnAdd.addEventListener('click', () => {
             taskTime.textContent = `Tarefa alterada às ${hour}h${minutes} em ${day}/${month}/${year}`;
 
             liTaskList.appendChild(taskTime);
+            containerButtons.append(btnDone, btnEdit, btnRemove)
         }
 
         btnEdit.replaceWith(btnSave);
