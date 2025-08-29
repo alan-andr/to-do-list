@@ -40,9 +40,9 @@ button {
     font-weight: 600;
     letter-spacing: .025rem;
 
-    box-shadow: 1px 2px 6px -1px rgba(0, 0, 0, 0.279);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.279);
 
-    border: 1px solid black;
+    border: 1px solid #001117;
     
     font-family: var(--font-text);
 
@@ -109,7 +109,7 @@ section.add {
     margin: 2rem 0 0 0;
     border-radius: 1rem;
     border: 3px solid var(--color-01);
-    box-shadow: 1px 3px 8px 1px #09525670;
+    box-shadow: 1px 3px 8px 1px #09525648;
     
 
     background-image: linear-gradient(45deg, #5aaa9596, #87a8739a);
@@ -154,7 +154,7 @@ section.add button#addTask {
     color: var(--color-08);
 
     width: 100%;
-    max-width: 200px;
+    max-width: 140px;
 
     margin: 0 0 1rem 0;
     outline-offset: 2px;
@@ -165,6 +165,21 @@ section.add button#addTask:hover {
     background-color: #095256c4;
 }
 
+article#msg {
+    display: none;
+
+    background-color: rgba(255, 255, 0, 0.764);
+
+    padding: .500rem;
+    border-radius: .825rem;
+    border: 1px solid black;
+
+    font-family: var(--font-text);
+    font-weight: 400;
+    text-wrap: balance;
+    font-size: .8rem;
+}
+
 section > ul#task-list {
     list-style: none;
 }
@@ -172,15 +187,15 @@ section > ul#task-list {
 section > ul#task-list li.li-container {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
 
-    margin: 1.8rem 0 1rem 0;
+    margin: 1.4rem 0 0.4rem 0;
     padding: 1rem;
     border-radius: 1rem;
     border: 3px solid var(--color-01);
-    box-shadow: 1px 3px 8px 1px #09525670;
+    box-shadow: 1px 3px 8px 1px #09525648;
 
     height: 100%;
     width: 100%;
@@ -253,10 +268,37 @@ div.buttons > button#remove:hover {
     transition-duration: .5s;
 }
 
+div.buttons > button#save {
+    background-color: #97DE6E;
+    color: black;
+}
+
+#renameInput {
+    border: none;
+    border-bottom: 1px solid var(--color-01);
+    outline: none;
+
+    width: 100%;
+    max-width: 200px;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--font-text);
+
+    color: #001117;
+    background-color: transparent;
+}
+
+div.buttons > button#save:hover {
+    background-color: #85c460;
+    transition-duration: .5s;
+}
+
 section > ul#task-list li.li-container > p {
     font-size: .725rem;
     text-align: center;
     font-weight: 400;
+    text-decoration: underline;
 }
 
 

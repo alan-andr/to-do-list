@@ -18,12 +18,6 @@ btnAdd.addEventListener('click', () => {
     let liTaskList = document.createElement('li');
     liTaskList.classList.add('li-container');
 
-    if (list.length > -1) {
-        sectionAdd.style.marginTop = '2rem';
-    } else {
-        sectionAdd.style.marginTop = '0rem';
-    }
-
     let hour = time.getHours();
     let minutes = time.getMinutes().toString().padStart(2, "0");
     let day = time.getDate();
@@ -37,15 +31,25 @@ btnAdd.addEventListener('click', () => {
     message.textContent = '';
 
     if (taskName.trim() === '') {
+        containerMessage.style.display = 'block';
+        containerMessage.style.marginTop = '1.3rem';
         message.textContent = 'Por favor, preencha o campo "Tarefa".';
         containerMessage.appendChild(message);
         return;
+    } else {
+        containerMessage.style.display = 'none';
+        containerMessage.style.marginTop = '0';
     }
 
     if (list.includes(taskName)) {
+        containerMessage.style.display = 'block';
+        containerMessage.style.marginTop = '1.3rem';
         message.textContent = `Você já inseriu "${taskName}" nas suas tarefas!`;
         containerMessage.appendChild(message);
         return;
+    } else {
+        containerMessage.style.display = 'none';
+        containerMessage.style.marginTop = '0';
     }
 
     let containerButtons = document.createElement('div');
@@ -106,10 +110,16 @@ btnAdd.addEventListener('click', () => {
         let renameTask = document.createElement('input');
         renameTask.type = 'text';
         renameTask.id = 'renameInput';
+        renameTask.placeholder = 'Insira a sua tarefa...'
+
+        let iconSave = document.createElement('i');
+        iconSave.classList.add('fa-regular', 'fa-bookmark');
 
         let btnSave = document.createElement('button');
         btnSave.type = 'button';
-        btnSave.textContent = 'Salvar';
+        btnSave.id = 'save';
+
+        btnSave.append(iconSave, " Salvar");
 
         spanTaskName.replaceWith(renameTask);
 
@@ -121,6 +131,16 @@ btnAdd.addEventListener('click', () => {
         btnSave.onclick = () => {
             let renameText = document.getElementById('renameInput').value;
             spanTaskName.textContent = renameText;
+
+            if (renameText.trim() === '') {
+                containerMessage.style.display = 'block';
+                message.textContent = 'Por favor, preencha o campo "Tarefa".';
+                containerMessage.appendChild(message);
+                liTaskList.append(containerMessage);
+                return;
+            } else {
+                containerMessage.style.display = 'none';
+            }
 
             list.shift()
             list.push(renameText);
