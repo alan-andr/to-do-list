@@ -115,7 +115,7 @@ section.add {
 section.add::before {
     content: '';
 
-    background-image: radial-gradient(circle, #3d518c, #7692FF);
+    background-image: radial-gradient(circle, #7692FF 50%, #3d518c);
 
     width: 88%;
     height: .300rem;
@@ -224,7 +224,7 @@ section > ul#task-list li.li-container {
 section > ul#task-list li.li-container::before {
     content: '';
 
-    background-image: radial-gradient(circle, #3d518c, #7692FF);
+    background-image: radial-gradient(circle, #7692FF 50%, #3d518c);
 
     width: 100%;
     height: .300rem;
