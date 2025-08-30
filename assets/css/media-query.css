@@ -20,11 +20,11 @@ large-monitor: 1400px
     }
 
     section.add {
-        max-width: 400px;
+        max-width: 350px;
     }
 
     li.li-container {
-        max-width: 400px;
+        max-width: 350px;
     }
 }
 
@@ -38,15 +38,11 @@ large-monitor: 1400px
     }
 
     section.add {
-        max-width: 320px;
-    }
-
-    ul#task-list {
-        flex-flow: row wrap;
+        max-width: 500px;
     }
 
     li.li-container {
-        max-width: 320px;
+        max-width: 500px;
     }
 }
 
