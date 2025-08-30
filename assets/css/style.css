@@ -32,7 +32,7 @@ body, html {
 }
 
 button {
-    width: 100%;
+    width: 90px;
 
     padding: .500rem;
     border-radius: 1rem;
@@ -80,7 +80,7 @@ main {
 
     width: 100%;
     height: auto;
-    
+
     padding: 2rem;
     box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
 
@@ -101,7 +101,7 @@ section.add {
 
     width: 100%;
 
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 1rem 0;
     border-radius: 1rem;
     
     box-shadow: 1px 3px 8px -1px rgba(0, 0, 0, 0.29);
@@ -204,7 +204,7 @@ section > ul#task-list li.li-container {
     align-items: center;
     gap: 1rem;
 
-    margin: 1.4rem 0 0.4rem 0;
+    margin: .5rem 0 1rem 0;
     padding: 1rem;
     border-radius: 1rem;
     
@@ -244,11 +244,9 @@ section > ul#task-list li.li-container > span {
 section > ul#task-list > li.li-container > div.buttons {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: .500rem;
-
-    width: 100px;
 }
 
 

@@ -20,43 +20,91 @@ large-monitor: 1400px
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 992px){
     section.add {
-        max-width: 500px;
+        max-width: 400px;
     }
 
     li.li-container {
         max-width: 500px;
     }
+
+    section > ul#task-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem; /* espaço entre as colunas */
+        justify-items: center;
+        align-items: center;
+    }
+
+    section > ul#task-list li.li-container {
+        width: 100%; /* garante que cada item ocupe só sua coluna */
+    }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 1200px){
     section.add {
-        max-width: 500px;
+        max-width: 420px;
     }
 
     li.li-container {
         max-width: 500px;
     }
+
+    section > ul#task-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem; /* espaço entre as colunas */
+        justify-items: center;
+        align-items: center;
+    }
+
+    section > ul#task-list li.li-container {
+        width: 100%; /* garante que cada item ocupe só sua coluna */
+    }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (min-width: 1400px){
     section.add {
-        max-width: 500px;
+        max-width: 470px;
     }
 
     li.li-container {
         max-width: 500px;
     }
+
+    section > ul#task-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem; /* espaço entre as colunas */
+        justify-items: center;
+        align-items: center;
+    }
+
+    section > ul#task-list li.li-container {
+        width: 100%; /* garante que cada item ocupe só sua coluna */
+    }
 }
 
-@media screen and (max-width: 1800px){
+@media screen and (min-width: 1800px){
     section.add {
         max-width: 400px;
     }
 
     li.li-container {
         max-width: 400px;
+    }
+
+    section > ul#task-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem; /* espaço entre as colunas */
+        justify-items: center;
+        align-items: center;
+    }
+
+    section > ul#task-list li.li-container {
+        width: 100%; /* garante que cada item ocupe só sua coluna */
     }
 }
 

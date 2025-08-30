@@ -63,7 +63,7 @@ btnAdd.addEventListener('click', () => {
     iconDone.classList.add('fa-regular', 'fa-circle-check', 'icon');
 
     btnDone.appendChild(iconDone);
-    btnDone.append(" Concluir");
+    btnDone.append("Concluir");
 
     const btnEdit = document.createElement('button');
     btnEdit.type = 'button';
@@ -74,7 +74,7 @@ btnAdd.addEventListener('click', () => {
 
 
     btnEdit.appendChild(iconEdit);
-    btnEdit.append(" Editar");
+    btnEdit.append("Editar");
 
     const btnRemove = document.createElement('button');
     btnRemove.type = 'button';
@@ -85,7 +85,7 @@ btnAdd.addEventListener('click', () => {
 
 
     btnRemove.appendChild(iconRemove);
-    btnRemove.append(" Excluir")
+    btnRemove.append("Excluir")
 
     btnDone.addEventListener('click', () => {
         taskTime.textContent = '';
@@ -119,7 +119,7 @@ btnAdd.addEventListener('click', () => {
         btnSave.type = 'button';
         btnSave.id = 'save';
 
-        btnSave.append(iconSave, " Salvar");
+        btnSave.append(iconSave, "Salvar");
 
         spanTaskName.replaceWith(renameTask);
 
