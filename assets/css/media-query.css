@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* 
+
+small-phone: 576px
+tablet: 768px
+notebook: 992px
+desktop: 1200px
+large-monitor: 1400px 
+
+*/
+
+@media screen and (max-width: 768px){
+    header {
+        max-width: 500px;
+    }
+
+    main {
+        max-width: 500px;
+    }
+
+    section.add {
+        max-width: 400px;
+    }
+
+    li.li-container {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    header {
+        max-width: 700px;
+    }
+
+    main {
+        max-width: 700px;
+    }
+
+    section.add {
+        max-width: 320px;
+    }
+
+    ul#task-list {
+        flex-flow: row wrap;
+    }
+
+    li.li-container {
+        max-width: 320px;
+    }
+}
+
+
