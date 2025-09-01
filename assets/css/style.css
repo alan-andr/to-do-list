@@ -179,7 +179,7 @@ article#msg {
 
 section.task {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
@@ -190,7 +190,7 @@ section > ul#task-list {
     list-style: none;
 
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 

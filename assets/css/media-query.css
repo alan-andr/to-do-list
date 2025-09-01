@@ -10,7 +10,7 @@ large-monitor: 1400px
 
 */
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     section.add {
         max-width: 350px;
     }
@@ -26,19 +26,7 @@ large-monitor: 1400px
     }
 
     li.li-container {
-        max-width: 500px;
-    }
-
-    section > ul#task-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem; /* espaço entre as colunas */
-        justify-items: center;
-        align-items: center;
-    }
-
-    section > ul#task-list li.li-container {
-        width: 100%; /* garante que cada item ocupe só sua coluna */
+        max-width: 400px;
     }
 }
 
@@ -50,18 +38,6 @@ large-monitor: 1400px
     li.li-container {
         max-width: 500px;
     }
-
-    section > ul#task-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem; /* espaço entre as colunas */
-        justify-items: center;
-        align-items: center;
-    }
-
-    section > ul#task-list li.li-container {
-        width: 100%; /* garante que cada item ocupe só sua coluna */
-    }
 }
 
 @media screen and (min-width: 1400px){
@@ -72,18 +48,6 @@ large-monitor: 1400px
     li.li-container {
         max-width: 500px;
     }
-
-    section > ul#task-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem; /* espaço entre as colunas */
-        justify-items: center;
-        align-items: center;
-    }
-
-    section > ul#task-list li.li-container {
-        width: 100%; /* garante que cada item ocupe só sua coluna */
-    }
 }
 
 @media screen and (min-width: 1800px){
@@ -93,18 +57,6 @@ large-monitor: 1400px
 
     li.li-container {
         max-width: 400px;
-    }
-
-    section > ul#task-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: .5rem; /* espaço entre as colunas */
-        justify-items: center;
-        align-items: center;
-    }
-
-    section > ul#task-list li.li-container {
-        width: 100%; /* garante que cada item ocupe só sua coluna */
     }
 }
 
