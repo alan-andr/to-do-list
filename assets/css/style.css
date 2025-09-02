@@ -60,7 +60,7 @@ button {
 }
 
 header {
-    background-image: radial-gradient(circle, #7692FF 5%, #3d518c 80%);
+    background-image: linear-gradient(360deg,#7692FF, #3d518c);
 
     width: 100%;
     margin: 0 auto 0 auto;
@@ -71,9 +71,9 @@ header {
 
 header > h1 {
     font-family: var(--font-title);
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     text-align: center;
-    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.295);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.175);
 
     color: var(--color-08);
 }
@@ -86,6 +86,7 @@ main {
 
     padding: 2rem;
     box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
+    box-shadow: inset 1px 2px 8px -1px rgba(0, 0, 0, 0.282);
 
     display: flex;
     flex-flow: column nowrap;
