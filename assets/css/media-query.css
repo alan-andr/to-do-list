@@ -22,37 +22,37 @@ large-monitor: 1400px
 
 @media screen and (min-width: 992px){
     section.add {
-        max-width: 400px;
+        max-width: 350px;
     }
 
     li.li-container {
-        max-width: 400px;
+        max-width: 450px;
     }
 }
 
 @media screen and (min-width: 1200px){
     section.add {
-        max-width: 420px;
+        max-width: 350px;
     }
 
     li.li-container {
-        max-width: 500px;
+        max-width: 400px;
     }
 }
 
 @media screen and (min-width: 1400px){
     section.add {
-        max-width: 470px;
+        max-width: 350px;
     }
 
     li.li-container {
-        max-width: 500px;
+        max-width: 400px;
     }
 }
 
 @media screen and (min-width: 1800px){
     section.add {
-        max-width: 400px;
+        max-width: 350px;
     }
 
     li.li-container {
