@@ -28,7 +28,6 @@ body, html {
     background-color: rgb(226, 226, 226);
 
     height: 100dvh;
-    height: 100vh;
 }
 
 button {
@@ -101,7 +100,7 @@ section.add {
     align-items: center;
     gap: 1rem;
 
-    height: 220px;
+    height: 250px;
 
     width: 100%;
     max-width: 350px;
@@ -119,7 +118,9 @@ section.add::before {
 
     background-image: radial-gradient(circle, #7692FF 50%, #3d518c 100%);
 
-    width: 95%;
+    top: 0;
+
+    width: 92%;
     height: .2rem;
 
     border-radius: 1rem;
@@ -213,7 +214,7 @@ section > ul#task-list li.li-container {
     
     box-shadow: 1px 3px 8px -1px rgba(0, 0, 0, 0.29);
 
-    height: 220px;
+    height: 250px;
     
     width: 100%;
     max-width: 350px;
