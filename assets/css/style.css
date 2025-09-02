@@ -60,7 +60,7 @@ button {
 }
 
 header {
-    background-image: radial-gradient(circle, #3d518c, #7692FF 100%);
+    background-image: radial-gradient(circle, #7692FF 5%, #3d518c 80%);
 
     width: 100%;
     margin: 0 auto 0 auto;
