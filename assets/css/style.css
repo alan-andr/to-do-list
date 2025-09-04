@@ -25,8 +25,6 @@
 }
 
 body, html {
-    background-color: rgb(226, 226, 226);
-
     height: 100dvh;
 }
 
@@ -63,14 +61,15 @@ header {
 
     width: 100%;
     margin: 0 auto 0 auto;
-    box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
+    box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.266);
 
     padding: .5rem;
+    border-radius: 0 0 75% 75%;
 }
 
 header > h1 {
     font-family: var(--font-title);
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.175);
 
@@ -84,8 +83,6 @@ main {
     min-height: 100%;
 
     padding: 2rem;
-    box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.215);
-    box-shadow: inset 1px 2px 8px -1px rgba(0, 0, 0, 0.282);
 
     display: flex;
     flex-flow: column nowrap;
